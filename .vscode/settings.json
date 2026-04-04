@@ -1,4 +1,7 @@
 {
   "cSpell.words": ["snowroach"],
-  "files.eol": "\n"
+  "files.eol": "\n",
+  "files.associations": {
+    "*.css": "tailwindcss"
+  }
 }
