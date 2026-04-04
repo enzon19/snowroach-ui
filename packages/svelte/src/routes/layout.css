@@ -1,1 +1,145 @@
 @import 'tailwindcss';
+
+@theme {
+	/* ─── Surface ─── */
+	--color-surface: #e5e5e5;
+	--color-on-surface: #171717;
+	--color-on-surface-variant: #737373;
+	--color-surface-container-lowest: #d4d4d4;
+	--color-surface-container-low: #f5f5f5;
+	--color-surface-container: #fafafa;
+	--color-surface-container-high: #ffffff;
+	--color-surface-container-highest: #ffffff;
+
+	/* ─── Primary ─── */
+	--color-primary: #0485f7;
+	--color-on-primary: #ffffff;
+	--color-primary-hover: #0048a8;
+	--color-primary-focus: #002f75;
+	--color-primary-soft: #f0f6fd;
+	--color-on-primary-soft: #002f75;
+	--color-primary-soft-hover: #dfe9f5;
+	--color-primary-soft-focus: #c7d4e5;
+
+	/* ─── Secondary ─── */
+	--color-secondary: #404040;
+	--color-on-secondary: #ffffff;
+	--color-secondary-hover: #262626;
+	--color-secondary-focus: #171717;
+	--color-secondary-soft: #f5f5f5;
+	--color-on-secondary-soft: #262626;
+	--color-secondary-soft-hover: #e5e5e5;
+	--color-secondary-soft-focus: #d4d4d4;
+
+	/* ─── Tertiary ─── */
+	--color-tertiary: #7d5260;
+	--color-on-tertiary: #ffffff;
+	--color-tertiary-hover: #724856;
+	--color-tertiary-focus: #663e4c;
+	--color-tertiary-soft: #f6e8ed;
+	--color-on-tertiary-soft: #663e4c;
+	--color-tertiary-soft-hover: #f0dde4;
+	--color-tertiary-soft-focus: #ead1da;
+
+	/* ─── Danger ─── */
+	--color-danger: #c0392b;
+	--color-on-danger: #ffffff;
+	--color-danger-hover: #a93226;
+	--color-danger-focus: #922b21;
+	--color-danger-soft: #fce8e6;
+	--color-on-danger-soft: #922b21;
+	--color-danger-soft-hover: #f8d7d4;
+	--color-danger-soft-focus: #f4c6c2;
+
+	/* ─── Warning ─── */
+	--color-warning: #8a5c00;
+	--color-on-warning: #ffffff;
+	--color-warning-hover: #7a5100;
+	--color-warning-focus: #6a4600;
+	--color-warning-soft: #fef2d6;
+	--color-on-warning-soft: #6a4600;
+	--color-warning-soft-hover: #fdebc2;
+	--color-warning-soft-focus: #fce4ae;
+
+	/* ─── Success ─── */
+	--color-success: #1a6b3a;
+	--color-on-success: #ffffff;
+	--color-success-hover: #155e31;
+	--color-success-focus: #105128;
+	--color-success-soft: #e2f4e9;
+	--color-on-success-soft: #105128;
+	--color-success-soft-hover: #d3eedd;
+	--color-success-soft-focus: #c4e8d1;
+}
+
+.dark {
+	/* ─── Surface ─── */
+	--color-surface: #0a0a0a;
+	--color-on-surface: #fafafa;
+	--color-on-surface-variant: #a1a1a1;
+	--color-surface-container-lowest: #171717;
+	--color-surface-container-low: #262626;
+	--color-surface-container: #404040;
+	--color-surface-container-high: #525252;
+	--color-surface-container-highest: #525252;
+
+	/* ─── Primary ─── */
+	--color-primary: #4594ef;
+	--color-on-primary: #000e2c;
+	--color-primary-hover: #a8b9ce;
+	--color-primary-focus: #c7d4e5;
+	--color-primary-soft: #001d4b;
+	--color-on-primary-soft: #dfe9f5;
+	--color-primary-soft-hover: #002f75;
+	--color-primary-soft-focus: #0048a8;
+
+	/* ─── Secondary ─── */
+	--color-secondary: #d4d4d4;
+	--color-on-secondary: #171717;
+	--color-secondary-hover: #e5e5e5;
+	--color-secondary-focus: #f5f5f5;
+	--color-secondary-soft: #262626;
+	--color-on-secondary-soft: #d4d4d4;
+	--color-secondary-soft-hover: #404040;
+	--color-secondary-soft-focus: #525252;
+
+	/* ─── Tertiary ─── */
+	--color-tertiary: #efb8c8;
+	--color-on-tertiary: #4a2532;
+	--color-tertiary-hover: #f5c7d4;
+	--color-tertiary-focus: #fbd6e0;
+	--color-tertiary-soft: #633b48;
+	--color-on-tertiary-soft: #f6e8ed;
+	--color-tertiary-soft-hover: #714554;
+	--color-tertiary-soft-focus: #7f4e60;
+
+	/* ─── Danger ─── */
+	--color-danger: #f28b82;
+	--color-on-danger: #601410;
+	--color-danger-hover: #f7a09a;
+	--color-danger-focus: #fbb5b0;
+	--color-danger-soft: #7e1c16;
+	--color-on-danger-soft: #fce8e6;
+	--color-danger-soft-hover: #8f221c;
+	--color-danger-soft-focus: #a02822;
+
+	/* ─── Warning ─── */
+	--color-warning: #ffb951;
+	--color-on-warning: #482900;
+	--color-warning-hover: #ffc97a;
+	--color-warning-focus: #ffd999;
+	--color-warning-soft: #5e3800;
+	--color-on-warning-soft: #fef2d6;
+	--color-warning-soft-hover: #704300;
+	--color-warning-soft-focus: #824e00;
+
+	/* ─── Success ─── */
+	--color-success: #6dd58c;
+	--color-on-success: #003919;
+	--color-success-hover: #8ee0a6;
+	--color-success-focus: #aaeabd;
+	--color-success-soft: #004d22;
+	--color-on-success-soft: #e2f4e9;
+	--color-success-soft-hover: #005c2a;
+	--color-success-soft-focus: #006b32;
+}
