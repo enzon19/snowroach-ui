@@ -1,6 +1,8 @@
 {
+	"cSpell.words": ["snowroach"],
+	"files.eol": "\n",
+	"tailwindCSS.classFunctions": ["tv"],
 	"files.associations": {
 		"*.css": "tailwindcss"
-	},
-	"files.eol": "\n"
+	}
 }
