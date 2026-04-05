@@ -1,4 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 @import 'tailwindcss';
+
+body {
+	font-family: 'Inter', sans-serif;
+}
 
 @theme {
 	/* ─── Surface ─── */
@@ -14,10 +19,10 @@
 	/* ─── Primary ─── */
 	--color-primary: #0485f7;
 	--color-on-primary: #ffffff;
-	--color-primary-hover: #0048a8;
-	--color-primary-soft: #f0f6fd;
-	--color-on-primary-soft: #002f75;
-	--color-primary-soft-hover: #dfe9f5;
+	--color-primary-hover: #3592f9;
+	--color-primary-soft: #e6f4fe;
+	--color-on-primary-soft: #0b73ce;
+	--color-primary-soft-hover: #d5efff;
 
 	/* ─── Secondary ─── */
 	--color-secondary: #404040;
