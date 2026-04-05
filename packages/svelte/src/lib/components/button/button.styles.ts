@@ -1,7 +1,7 @@
 import { tv } from 'tailwind-variants';
 
 export const buttonStyles = tv({
-	base: 'box-border inline-flex cursor-pointer items-center justify-center gap-2 rounded-lg text-center font-medium transition-all focus-visible:outline-3 focus-visible:outline-offset-2 motion-reduce:transition-none',
+	base: 'box-border inline-flex cursor-pointer items-center justify-center gap-2 rounded-lg text-center font-medium transition-all focus-visible:outline-3 focus-visible:outline-offset-2 enabled:active:scale-[0.97] enabled:active:brightness-90 motion-reduce:transition-none',
 	variants: {
 		size: {
 			xs: 'h-8 px-3 text-xs',
@@ -19,7 +19,7 @@ export const buttonStyles = tv({
 			success: ''
 		},
 		variant: {
-			solid: '',
+			solid: 'enabled:active:brightness-95',
 			soft: '',
 			surface: 'border',
 			outlined: 'border bg-transparent',
@@ -29,8 +29,7 @@ export const buttonStyles = tv({
 			true: 'rounded-full'
 		},
 		disabled: {
-			true: 'cursor-not-allowed opacity-50',
-			false: 'active:scale-[0.97] active:brightness-95'
+			true: 'cursor-not-allowed opacity-50'
 		}
 	},
 	compoundVariants: [
