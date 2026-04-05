@@ -6,7 +6,8 @@ import type { Preview } from '@storybook/sveltekit';
 const preview: Preview = {
 	decorators: [
 		(Story, context) => {
-			const isDark = context.globals.backgrounds?.value === 'dark';
+			const bg = context.globals.backgrounds?.value;
+			const isDark = bg ? bg === 'dark' : window.matchMedia('(prefers-color-scheme: dark)').matches;
 			document.body.classList.toggle('dark', isDark);
 			return Story();
 		}
