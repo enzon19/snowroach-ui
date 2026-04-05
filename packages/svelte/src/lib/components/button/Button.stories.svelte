@@ -10,6 +10,11 @@
 		args: {
 			onclick: fn()
 		},
+		argTypes: {
+			size: { control: 'select' },
+			color: { control: 'select' },
+			variant: { control: 'select' }
+		},
 		parameters: {
 			docs: {
 				controls: {
