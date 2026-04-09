@@ -10,7 +10,7 @@
 		pill = false,
 		disabled: disabledProp = false,
 		loading = false,
-		loadingText,
+		'loading-text': loadingText,
 		class: className,
 		href,
 		...restProps
