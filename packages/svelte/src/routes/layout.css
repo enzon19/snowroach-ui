@@ -19,7 +19,7 @@ body {
 	/* ─── Primary ─── */
 	--color-primary: #0485f7;
 	--color-on-primary: #ffffff;
-	--color-primary-hover: #3592f9;
+	--color-primary-hover: #0371d2;
 	--color-primary-soft: #008ff519;
 	--color-on-primary-soft: #0b73ce;
 	--color-primary-soft-hover: #009eff2a;
@@ -27,7 +27,7 @@ body {
 	/* ─── Secondary ─── */
 	--color-secondary: #7c3af7;
 	--color-on-secondary: #ffffff;
-	--color-secondary-hover: #9257f9;
+	--color-secondary-hover: #6931d2;
 	--color-secondary-soft: #7c3af719;
 	--color-on-secondary-soft: #6020ce;
 	--color-secondary-soft-hover: #7c3af72a;
@@ -35,7 +35,7 @@ body {
 	/* ─── Tertiary ─── */
 	--color-tertiary: #4b6ef5;
 	--color-on-tertiary: #ffffff;
-	--color-tertiary-hover: #6f88f7;
+	--color-tertiary-hover: #405ed0;
 	--color-tertiary-soft: #4b6ef519;
 	--color-on-tertiary-soft: #2a4ece;
 	--color-tertiary-soft-hover: #4b6ef52a;
@@ -43,7 +43,7 @@ body {
 	/* ─── Danger ─── */
 	--color-danger: #d60d0d;
 	--color-on-danger: #ffffff;
-	--color-danger-hover: #f93535;
+	--color-danger-hover: #b60b0b;
 	--color-danger-soft: #f7040419;
 	--color-on-danger-soft: #ce0b0b;
 	--color-danger-soft-hover: #f704042a;
@@ -51,7 +51,7 @@ body {
 	/* ─── Warning ─── */
 	--color-warning: #f78504;
 	--color-on-warning: #ffffff;
-	--color-warning-hover: #f99735;
+	--color-warning-hover: #d27103;
 	--color-warning-soft: #f7850419;
 	--color-on-warning-soft: #ce6c0b;
 	--color-warning-soft-hover: #f785042a;
@@ -59,7 +59,7 @@ body {
 	/* ─── Success ─── */
 	--color-success: #04c957;
 	--color-on-success: #ffffff;
-	--color-success-hover: #35d472;
+	--color-success-hover: #03ab4a;
 	--color-success-soft: #04c95719;
 	--color-on-success-soft: #0ba348;
 	--color-success-soft-hover: #04c9572a;
