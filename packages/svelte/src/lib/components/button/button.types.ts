@@ -3,7 +3,7 @@ import type { HTMLButtonAttributes, HTMLAnchorAttributes } from 'svelte/elements
 
 type ButtonVariant = 'solid' | 'soft' | 'surface' | 'outlined' | 'ghost';
 type ButtonColor = 'primary' | 'secondary' | 'tertiary' | 'danger' | 'warning' | 'success';
-type ButtonSize = 'xs' | 'sm' | 'md' | 'lg' | 'xl';
+type ButtonSize = 'xs' | 'sm' | 'md' | 'lg' | 'xl' | '2xl';
 
 interface BaseButtonProps {
 	children: Snippet;
