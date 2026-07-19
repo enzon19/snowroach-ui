@@ -3,6 +3,8 @@
 	import Button from './Button.svelte';
 	import { fn } from 'storybook/test';
 
+	import IonSnow from '~icons/ion/snow';
+
 	const { Story } = defineMeta({
 		title: 'Buttons/Button',
 		component: Button,
@@ -26,3 +28,5 @@
 </script>
 
 <Story name="Default">Button</Story>
+<Story name="With Icon"><IonSnow /> Button</Story>
+<Story name="Icon Only"><IonSnow /></Story>
