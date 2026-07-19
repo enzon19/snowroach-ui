@@ -29,6 +29,10 @@ export const buttonStyles = tv({
 		pill: {
 			true: 'rounded-full'
 		},
+		iconOnly: {
+			true: 'aspect-square px-0',
+			false: ''
+		},
 		disabled: {
 			true: 'cursor-not-allowed opacity-50'
 		}
