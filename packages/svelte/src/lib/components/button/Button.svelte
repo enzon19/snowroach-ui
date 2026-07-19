@@ -18,7 +18,9 @@
 	}: ButtonProps = $props();
 
 	let disabled = $derived(disabledProp || loading);
-	const base = $derived(buttonStyles({ size, color, variant, pill, iconOnly, disabled, className }));
+	const base = $derived(
+		buttonStyles({ size, color, variant, pill, iconOnly, disabled, className })
+	);
 	const buttonProps = $derived(restProps as Omit<HTMLButtonAttributes, 'children' | 'class'>);
 	const anchorProps = $derived(restProps as Omit<HTMLAnchorAttributes, 'children' | 'class'>);
 </script>
@@ -43,11 +45,25 @@
 		role="button"
 		class={base}
 		{...anchorProps}
+		data-srui-button-size={size}
+		data-srui-button-color={color}
+		data-srui-button-variant={variant}
+		data-srui-button-pill={pill}
+		data-srui-button-icon-only={iconOnly}
 	>
 		{@render childrenOrLoading()}
 	</a>
 {:else}
-	<button {disabled} class={base} {...buttonProps}>
+	<button
+		{disabled}
+		class={base}
+		{...buttonProps}
+		data-srui-button-size={size}
+		data-srui-button-color={color}
+		data-srui-button-variant={variant}
+		data-srui-button-pill={pill}
+		data-srui-button-icon-only={iconOnly}
+	>
 		{@render childrenOrLoading()}
 	</button>
 {/if}
