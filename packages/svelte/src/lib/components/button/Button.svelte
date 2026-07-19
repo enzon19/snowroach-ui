@@ -10,14 +10,15 @@
 		pill = false,
 		disabled: disabledProp = false,
 		loading = false,
-		'loading-text': loadingText,
+		loadingText,
+		iconOnly,
 		class: className,
 		href,
 		...restProps
 	}: ButtonProps = $props();
 
 	let disabled = $derived(disabledProp || loading);
-	const base = $derived(buttonStyles({ size, color, variant, pill, disabled, className }));
+	const base = $derived(buttonStyles({ size, color, variant, pill, iconOnly, disabled, className }));
 	const buttonProps = $derived(restProps as Omit<HTMLButtonAttributes, 'children' | 'class'>);
 	const anchorProps = $derived(restProps as Omit<HTMLAnchorAttributes, 'children' | 'class'>);
 </script>

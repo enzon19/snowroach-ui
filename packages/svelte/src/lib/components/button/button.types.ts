@@ -13,7 +13,8 @@ interface BaseButtonProps {
 	pill?: boolean;
 	disabled?: boolean;
 	loading?: boolean;
-	'loading-text'?: string;
+	loadingText?: string;
+	iconOnly?: boolean;
 	class?: string;
 }
 
